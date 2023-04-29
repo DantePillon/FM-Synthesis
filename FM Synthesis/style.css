@@ -1,0 +1,30 @@
+body {
+    background: grey;
+    text-align: center;
+    
+}
+
+#create-node-btn {
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+/*
+.node-list {
+    display: flex;
+    height: 90vh;
+}
+*/
+
+.node {
+    background-color: white;
+    padding: 20px 0;
+    margin: 20px;
+    width: 300px;
+}
+
+.link {
+    position: absolute;
+    z-index: 2;
+    border: solid;
+}

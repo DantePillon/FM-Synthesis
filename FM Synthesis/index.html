@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Audio API Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="create-node-btn">Create node</button>
+    <ol id="node-list">
+        <li class="node" id="node-id-1">
+            <div class="wave-type">
+                <span>Wave</span>
+                <select>
+                    <option value="sine">Sine</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="sawtooth">Sawtooth</option>
+                    <option value="square">Square</option>
+                    <option value="function">Function</option>
+                    <option value="polynomial">Polynomial</option>
+                </select>
+            </div>
+            <div class="node-contents">  
+                <span>Function</span>
+                <input type="text" name="wave-function">
+                <br>
+                <span>Lower bound</span>
+                <input type="number" name="lower-bound">
+                <br>
+                <span>Uppder bound</span>
+                <input type="number" name="upper-bound">
+            </div>
+        </li>
+    </ol>
+
+    <ol id="link-list">
+        <li class="link" id="link-id-1" data-input-node="node-1" data-output-node="node-1">
+            <svg height="225" width="300">
+                <path d="M150 25 L75 200 L225 200 Z" fill="none" stroke="black"/>
+            
+                <circle cx="150" cy="25" r="5" fill="blue"/>
+                <circle cx="75" cy="200" r="5" fill="cyan"/>
+                <circle cx="225" cy="200" r="5" fill="green"/>
+            
+            </svg>
+        </li>
+    </ol>
+    <script src="script.js"></script>
+</body>
+</html>
